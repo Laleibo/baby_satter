@@ -1,0 +1,13 @@
+<h1> What URL would you like to shorten? </h1>
+
+<%= form_for @url, url: user_create_path do %>
+  <%= label_tag(:url, "URL") %>
+  <%= text_field_tag(:url) %>
+  <%= submit_tag("Submit") %>
+<% end %>
+
+<% @users.each do |x| %>
+<p>long Url:<%= x.url %> </p>
+<p> short Url:<a href="http://localhost:3000/show/<%=x.id %>">http://localhost:3000/show/<%=x.id %></a>
+<hr>
+<% end %>
