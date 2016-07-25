@@ -1,0 +1,10 @@
+<h1> Create a Pet Profile for your dog and to learn about their breed. </h1>
+
+<h3> What is your name?</h3>
+
+<%= form_for @owner, method: "post" do %>
+
+  <%= label_tag(:name, "name") %>
+  <%= text_field_tag(:name) %>
+<%= submit_tag("Submit") %>
+<% end %>

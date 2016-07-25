@@ -1,0 +1,10 @@
+<%= @owner.name %>
+
+<h1>Your Pets Pet Name </h1>
+<% @owner.pets. each do |pet| %>
+<%= link_to pet.name , owner_pet_path(@owner, pet)%>
+<% end %>
+
+
+<%= render 'pets/form' %>
+<br>

@@ -1,0 +1,12 @@
+<h1><%= @pet.name %> </h1>
+<h2> <%= @pet.breed %> <h2>
+<br>
+<% if @pet.animal == "dog" %>
+<h4> breed average weight: </h4> <%= @petinfo[:weight] %>
+<h4> PetMD ranking number: </h4> <%= @petinfo[:ranking]%>
+<h4> breed charectistics: </h4><%= @petinfo[:char] %>
+<% else @pet.animal == "cat" %>
+<h4> Breed Bio: </h4> <%= @catinfo %>
+<% end %>
+<br>
+<%= link_to 'Back', owner_path(@owner) %>

@@ -1,0 +1,14 @@
+
+<%= form_for([@owner, @owner.pets. build]) do |f| %>
+
+<%=label_tag(:name, "Pet Name") %>
+<%= text_field_tag(:name) %>
+
+  <%= label_tag(:animal, "Do you have a 'dog' or 'cat'? ") %>
+  <%= text_field_tag(:animal) %>
+
+  <%= label_tag(:breed, "breed") %>
+  <%= text_field_tag(:breed) %>
+
+  <%= submit_tag("Submit") %>
+<% end %>

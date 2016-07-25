@@ -1,0 +1,12 @@
+<%= form_tag "/pets/#{@owner.id}" do %>
+  <%= label_tag(:animal, "Animal type") %>
+  <%= text_field_tag(:animal) %>
+
+  <%= label_tag(:breed, "breed") %>
+  <%= text_field_tag(:breed) %>
+
+  <%= submit_tag("Submit") %>
+<% end %>
+
+
+<%= @petinfo %>
